@@ -2,13 +2,27 @@
 //
 
 #include <iostream>
-
-/*int main()
+/*
+int main()
 {
-    std::cout << "Hello World!\n";
-    std::cin.get();
-    //getchar();
-    //return 0;
+	int i, ilen, len = 0;
+	char str[1040] = { "2020121400|" };
+	char* p = str;
+	ilen = strlen(str);
+	len = 1040 - ilen - 1;
+	strncpy(p + ilen, "2021011400|", len);
+	str[1040 - ilen - 1] = '\0';
+	i = strlen(str);
+	str[i - 1] = '\0';
+	char* pszJLBatch = strtok(str, "|");
+	char szBatchCode[_MAX_PATH * 4] = { 0 };
+	strcpy(szBatchCode, pszJLBatch);
+
+
+	std::cout << std::dec << i << "\n";
+	std::cin.get();
+	//getchar();
+	//return 0;
 }
 */
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
