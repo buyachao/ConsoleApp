@@ -18,28 +18,34 @@
     <ClCompile Include="ConsoleApp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ThreadAndProcess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="algoTwoSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="const.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="static.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="this.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="inline.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="virtual.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="extern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="inline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="static.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="struct.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="algoTwoSum.cpp">
+    <ClCompile Include="this.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="note.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

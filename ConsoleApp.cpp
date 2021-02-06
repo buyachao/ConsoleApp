@@ -63,7 +63,7 @@ public:
 	}
 };
 
-#ifndef main
+#ifdef main
 int main()
 {
 	/*取号服务接口
