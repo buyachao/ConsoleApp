@@ -1,4 +1,3 @@
-
 #include<iostream>
 #include<stack>
 #include<queue>
@@ -228,6 +227,7 @@ void midTraverse(TreeNode* tnode)
 	cout << "\n";
 }
 
+#ifdef main
 int main(int argc, char** argv)
 {
 	//ÆÕÍ¨Ê÷
@@ -263,3 +263,4 @@ int main(int argc, char** argv)
 	system("pause");
 	return 0;
 }
+#endif

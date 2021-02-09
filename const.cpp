@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <iostream>
 using namespace std;
+
 class A
 {
 public:
@@ -42,7 +43,8 @@ const int function5();               //返回一个常数
 const int* function6();				 //返回一个指向常量的指针变量，使用：const int *p = function6();
 int* const function7();              //返回一个指向变量的常指针，使用：int* const p = function7();
 
-/*int main()
+#ifdef main
+int main()
 {
 	char str[17] = { 0 };
 	char* p = str;
@@ -51,4 +53,5 @@ int* const function7();              //返回一个指向变量的常指针，使用：int* cons
 
 	system("pause");
 	return 0;
-}*/
+}
+#endif
