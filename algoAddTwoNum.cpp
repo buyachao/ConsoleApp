@@ -143,7 +143,7 @@ public:
 };
 
 
-#ifndef main
+#ifdef main
 int main(int argc, char* argv[])
 {
 	Solution s;
