@@ -83,9 +83,54 @@ public:
 	}
 };
 
-#ifdef main
+
+int func(unsigned int v)
+{
+	unsigned int temp = 0;
+
+	temp = v >> 16;
+	cout << temp << " ";
+	v ^= temp;
+	cout << v << "+ \t";
+
+	temp = v >> 8;
+	cout << temp << " ";
+	v ^= temp;
+	cout << v << "- \t";
+
+	temp = v >> 4;
+	cout << temp << " ";
+	v ^= temp;
+	cout << v << "* \t";
+
+	v = v & 0xf;
+	cout << v << "/ \t";
+
+	temp = (0x6996 >> v) & 1;
+	cout << temp << endl;
+
+	return temp;
+}
+
+int funb(int n)
+{
+	unsigned int t = 1 << n;
+	int val = 0;
+	for (int i = 0; i < t; i++)
+	{
+		val += func(i);
+	}
+	return val;
+}
+
+#ifndef main
 int main(int argc, char* argv[])
 {
+	int iNum = funb(10);
+
+	cout << iNum << endl;
+
+	/*
 	//--------------------------------构造与析构
 	A* a = new B();
 	delete a;
@@ -115,6 +160,7 @@ int main(int argc, char* argv[])
 
 	bp->ff();	 //C f() CB类型指针, 因CB类型的 f()函数为虚函数，运行时将会根据对象的实际类型来调用相应的函数，实际对象类型是CC类型。
 	cout << endl;
+	*/
 
 	system("pause");
 	return 0;
